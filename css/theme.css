@@ -23,6 +23,10 @@ body {
   margin: 3px;
 }
 
+.project-link{
+  text-align: center;
+}
+
 .container {
   max-width: 700px;
   background-color: #fff;
