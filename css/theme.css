@@ -1,34 +1,68 @@
-body{
-  background: #000;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+img {
+  border: 1px solid #dddddd;
+  margin: 15px;
+  float: left;
 }
 
-.content{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  background: #FFF;
-  padding: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+body {
+  font-family: Source Sans Pro, Open Sans, Helvetica, Arial, sans-serif;
+  background-color: #1F1F1F;
+  font-weight: 300;
 }
 
-.content_bar{
-  overflow: hidden; /* add this to contain floated children */
+.container {
+  max-width: 700px;
+  background-color: #fff;
+  padding: 25px 50px;
+  margin: 20px auto;
 }
 
-.tile{
-    float: left;
-    padding: 20px;
+.title{
+  float: left;
 }
 
-.tile_left{
-  width: 25%;
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Open Sans, Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  line-height: 100%;
 }
-
-.tile_center{
-  width: 50%;
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  font-family: Open Sans;
+  text-align: center;
+  letter-spacing: 1px;
+  word-break: keep-all;
 }
-
-.tile_right{
-  width: 25%;
+h2 {
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 20px ;
+}
+h4 {
+  font-size: 16px ;
+}
+h5 {
+  font-size: 12px;
+}
+strong {
+  font-weight: 400;
+}
+p {
+  text-indent: 22px;
+  font-size: 16px;
+  margin: 0px;
 }
