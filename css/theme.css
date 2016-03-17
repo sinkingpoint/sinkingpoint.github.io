@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
-img {
+.avatar {
   border: 1px solid #dddddd;
   margin: 15px;
   float: left;
@@ -11,6 +11,16 @@ body {
   font-family: Source Sans Pro, Open Sans, Helvetica, Arial, sans-serif;
   background-color: #1F1F1F;
   font-weight: 300;
+}
+
+.contact_item{
+  text-align: center;
+}
+
+.icon{
+  width: 32px;
+  height: 32px;
+  margin: 3px;
 }
 
 .container {
