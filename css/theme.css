@@ -80,3 +80,7 @@ p {
   font-size: 16px;
   margin: 0px;
 }
+
+.lightbox-content{
+  display: none;
+}
