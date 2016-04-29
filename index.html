@@ -60,29 +60,38 @@
       </div>
 
       <div class="row-fluid">
-        <div class="span1 offset2 project-link">
+        <div class="span2 offset2 project-link">
           NXCS
         </div>
 
-        <div class="span1 offset2 project-link">
+        <div class="span2 offset2 project-link">
           FuzzyNXCS
         </div>
 
-        <div class="span1 offset2 project-link">
+        <div class="span2 offset2 project-link">
           Quarrel
         </div>
       </div>
 
       <div class="row-fluid">
-        <div class="span1 offset2 project-link">
+        <div class="span2 offset2 project-link">
           QuomicCMS
         </div>
 
-        <div class="span1 offset2 project-link">
+        <div class="span2 offset2 project-link">
           This Website (With CI/CD)
+          <div class="lightbox-content">
+            This website comes with proper CI/CD. You'll find the repo
+            over on <a href="https://github.com/sinkingpoint/sinkingpoint.github.io">github</a>
+            and the Jenkins build at <a href="https://ci.sinkingpoint.com/job/quirl.co.nz/">My Jenkins Instance</a>
+            When commits are made to the feature branch at the above repo, they are pushed to <a href="https://test.quirl.co.nz">my staging environment</a>.
+            CloudFlare (Which acts as a CDN for this site!) is set up to not cache anything for that subdomain, so changes
+            are immediately visible. When commits are merged into the master branch, they will be pushed to
+            the s3 bucket which governs this site and changes will be visible in up to half an hour as the cache flushes!
+          </div>
         </div>
 
-        <div class="span1 offset2 project-link">
+        <div class="span2 offset2 project-link">
           KiwiCon
         </div>
       </div>
