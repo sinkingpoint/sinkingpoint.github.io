@@ -12,6 +12,9 @@
     <link href="/css/theme.css" rel="stylesheet">
   </head>
   <body>
+    <div class="lightbox-bg">
+      <div class="lightbox">Cats</div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="span5 title">
@@ -83,7 +86,7 @@
           <div class="lightbox-content">
             This website comes with proper CI/CD. You'll find the repo
             over on <a href="https://github.com/sinkingpoint/sinkingpoint.github.io">github</a>
-            and the Jenkins build at <a href="https://ci.sinkingpoint.com/job/quirl.co.nz/">My Jenkins Instance</a>
+            and the Jenkins build at <a href="https://ci.sinkingpoint.com/job/quirl.co.nz/">My Jenkins Instance</a>.
             When commits are made to the feature branch at the above repo, they are pushed to <a href="https://test.quirl.co.nz">my staging environment</a>.
             CloudFlare (Which acts as a CDN for this site!) is set up to not cache anything for that subdomain, so changes
             are immediately visible. When commits are merged into the master branch, they will be pushed to
@@ -115,5 +118,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/lightbox.js"></script>
   </body>
 </html>
