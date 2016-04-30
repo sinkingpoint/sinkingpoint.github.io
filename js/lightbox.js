@@ -11,4 +11,10 @@ $(document).ready(function(){
   $(".lightbox-bg").click(function(){
     $(".lightbox-bg").css('display', 'none');
   });
+
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) { // escape key maps to keycode `27`
+      $(".lightbox-bg").css('display', 'none');
+    }
+  });
 });
