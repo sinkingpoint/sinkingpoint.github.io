@@ -3,10 +3,10 @@
 ## Build
 
 ### Release [quirl.co.nz](https://quirl.co.nz)
-[![Build Status](https://ci.sinkingpoint.com/buildStatus/icon?job=Personal/quirl.co.nz)](https://ci.sinkingpoint.com/job/quirl.co.nz/)
+[![Build Status](https://ci.sinkingpoint.com/buildStatus/icon?job=Personal/quirl.co.nz)](https://ci.sinkingpoint.com/job/Personal/job/quirl.co.nz/)
 
 ### Testing [test.quirl.co.nz](http://test.quirl.co.nz)
-[![Build Status](https://ci.sinkingpoint.com/buildStatus/icon?job=Personal/quirl feature branch)](https://ci.sinkingpoint.com/job/quirl%20feature%20branch/)
+[![Build Status](https://ci.sinkingpoint.com/buildStatus/icon?job=Personal/quirl feature branch)](https://ci.sinkingpoint.com/job/Personal/job/quirl%20feature%20branch/)
 
 ## About
 This is the backing repo to [quirl.co.nz](https://quirl.co.nz) and [sinkingpoint.com](https://sinkingpoint.com).
