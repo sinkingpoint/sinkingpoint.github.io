@@ -1,32 +1,22 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# ----------- CONFIGURABLE START -----------
+title:            "Sinkingpoint"
+description:      "Ramblings from someone who should know better"
+url:              /blarg # Site url, without a slash at the end.
+signoff:          "colin" # Your name
+facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.
+share:            false # Turn on twitter and facebook share buttons
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Sinkingpoint
-email: colin@quirl.co.nz
-description: > # this means to ignore newlines until "baseurl:"
-  Musings from someone who ought to know better
-baseurl: "/blarg" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ""
-github_username:  "sinkingpoint"
+links:
+  - name:         Posts
+    url:          /blarg
+    external:     false
+  - name:         About me
+    url:          /
+    external:     false
+# ------------ CONFIGURABLE END ------------
 
-# Build settings
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+permalink:        /blarg/posts/:title
+defaults:
+  - values:
+      layout: "default"
