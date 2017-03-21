@@ -4,10 +4,12 @@ pipeline {
         stage('Jekyll Publish') {
             steps {
                sh '''
+                    . /usr/local/rvm/gems/ruby-2.3.1/environment
+                    gem install bundler
                     cd blarg
                     bundle install
                     bundle exec jekyll build
-                    find . -type d -not -name _site -exec rm -r {} \\;
+                    find . -maxdepth 1 -not -name _site -not -name '.' -exec rm -r {} \\;
                     mv _site/* .
                     rm -rf _site
                   '''
