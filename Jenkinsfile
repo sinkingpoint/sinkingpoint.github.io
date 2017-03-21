@@ -8,6 +8,7 @@ pipeline {
                     gem install bundler
                     cd blarg
                     bundle install
+                    cat _config.yml
                     bundle exec jekyll build
                     find . -maxdepth 1 -not -name _site -not -name '.' -exec rm -r {} \\;
                     mv _site/* .
