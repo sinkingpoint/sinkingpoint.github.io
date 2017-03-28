@@ -9,14 +9,14 @@ share:            false # Turn on twitter and facebook share buttons
 
 links:
   - name:         Posts
-    url:          /blarg
+    url:          /
     external:     false
   - name:         About me
-    url:          /
+    url:          https://quirl.co.nz
     external:     false
 # ------------ CONFIGURABLE END ------------
 
-permalink:        /blarg/posts/:title
+permalink:        /posts/:title
 defaults:
   - values:
       layout: "default"
