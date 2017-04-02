@@ -21,6 +21,9 @@ body {
   width: 32px;
   height: 32px;
   margin: 3px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .project-link{
