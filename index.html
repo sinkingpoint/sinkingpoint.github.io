@@ -82,11 +82,27 @@
         </div>
 
         <div class="span2 offset2 project-link">
-          FuzzyNXCS
+          Sythe
           <div class="lightbox-content">
-            <h3>Fuzzy-NXCS</h3>
-            Again under Dr Aaron Chen, Fuzzy NXCS is an extention to our previous work which
-            allows for continuous inputs and outputs through the use of Fuzzy Logic.
+            <h3><a href="https://github.com/sinkingpoint/sythe">Sythe</a></h3>
+            Sythe is a project of mine spawned out of a frustration with the two
+            existing big players in AWS resource management. It's a rule engine
+            for resources for which there exist:
+
+            <ul>
+              <li>Janitor Monkey - is made by Netflix. The big problem is that rules
+                are defined in Java and compiled into the application. While this gives
+                a large amount of expressiveness, it makes deployment and management a pain
+              </li>
+
+              <li>Cloud Custodian - Is slightly better. Configurations are done in YAML. This
+                gives us back the ease in deployment, but gets rid of the nice expressiveness
+                that working in an actual programming language gives us
+              </li>
+            </ul>
+
+            Sythe provides a DSL and an interpretter, allowing both the expressiveness of a programming
+            language, and the ease of deployment of a static deployable with configuration.
           </div>
         </div>
 
