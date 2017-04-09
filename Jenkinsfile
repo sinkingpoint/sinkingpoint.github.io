@@ -19,7 +19,7 @@ pipeline {
 
         stage('Push to S3') {
             steps {
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'Quirl Site Pusher', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'S3 Artifact Pusher', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
                     sh '''
                         if [ "$BRANCH_NAME" = "master" ]; then
                             aws s3 sync . s3://quirl.co.nz/ --exclude ".git/*" --exclude "Jenkinsfile" --exclude "README.md" --region ap-southeast-2
