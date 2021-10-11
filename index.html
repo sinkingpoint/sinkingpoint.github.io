@@ -41,6 +41,12 @@
         </div>
       </div>
 
+      <div class="span2 contact_item">
+        <a href="https://github.com/sinkingpoint">
+          <img src="/images/contact_icons/twitter.png" class="icon" />@sinkingpoint
+        </a>
+      </div>
+
       <hr>
 
       <div class="row">
@@ -51,8 +57,7 @@
         <br>
 
         <div class="span5">
-          New graduate from Victoria University of Wellington, working in SRE @ Cloudflare. Doing
-          Machine learning and AWS stuff in my spare time. 
+          Veteran SRE working as a Core SRE and Observability Wonk @Cloudflare teaching people how to find out when their stuff is broken, and what's wrong when it is
         </div>
       </div>
 
@@ -66,92 +71,32 @@
 
       <div class="row-fluid">
         <div class="span2 offset2 project-link">
-          NXCS
+          OpenMetrics Parser
           <div class="lightbox-content">
-            <h3><a href="http://artifacts.sinkingpoint.com/Papers/nxcs-paper.pdf">NXCS</a></h3>
-            While working as a research assistant at Victoria University, I underwent research
-            with Dr Aaron Chen which resulted in the production of the learning algorithm
-            NXCS (Natural-XCS), based on the reinforcement learning algorithm XCS, NXCS
-            uses the "Natural" gradient (Proposal by Amari et al) to provide a better
-            gradient descent approach to XCS on its own, allowing results for learning
-            problems that require stochastic policies in optimality.
+            <h3><a href="https://github.com/sinkingpoint/openmetrics-parser">OpenMetrics Parser</a></h3>
+            A fully compliant OpenMetrics parser in Rust, that provides an API to parse OpenMetrics text exposition formats
+            into an easy to use Model. 
           </div>
         </div>
 
         <div class="span2 offset2 project-link">
-          Sythe
+          Alertmanager Bouncer
           <div class="lightbox-content">
-            <h3><a href="https://github.com/sinkingpoint/sythe">Sythe</a></h3>
-            Sythe is a project of mine spawned out of a frustration with the two
-            existing big players in AWS resource management. It's a rule engine
-            for resources for which there exist:
-
-            <ul>
-              <li>Janitor Monkey - is made by Netflix. The big problem is that rules
-                are defined in Java and compiled into the application. While this gives
-                a large amount of expressiveness, it makes deployment and management a pain
-              </li>
-
-              <li>Cloud Custodian - Is slightly better. Configurations are done in YAML. This
-                gives us back the ease in deployment, but gets rid of the nice expressiveness
-                that working in an actual programming language gives us
-              </li>
-            </ul>
-
-            Sythe provides a DSL and an interpretter, allowing both the expressiveness of a programming
-            language, and the ease of deployment of a static deployable with configuration.
+            <h3><a href="https://github.com/sinkingpoint/alertmanager_bouncer">Alertmanager Bouncer</a></h3>
+            Alertmanager Bouncer is a business logic proxy that sits in front of a Prometheus Alertmanager and applies
+            logic to block or proxy requests to the Alertmanager. This allows enforcement of rules like silences having 
+            authors attached, and ratelimiting services sending alerts
           </div>
         </div>
 
         <div class="span2 offset2 project-link">
-          Quarrel
+          QInit
           <div class="lightbox-content">
-            <h3>Quarrel</h3>
-            Quarrel is a pet project of mine which is a game engine, built from the
-            window manager up. It basically serves as my attempt to learn how everything
-            works, from the window manager up. Quarell includes libraries for loading
-            images and displaying them on the screen, as well as input functionality
-            and 3D graphics.
-          </div>
-        </div>
-      </div>
-
-      <div class="row-fluid">
-        <div class="span2 offset2 project-link">
-          Balancepoint
-          <div class="lightbox-content">
-            <h3>Balancepoint</h3>
-            <a href="https://github.com/sinkingpoint/balancepoint">Balancepoint</a> is a software HTTP load balancer
-            I've been working on recently. It's designed to be as extensible as possible as well as maintaining
-            the idea of cattle over pets - the general idea that instance discovery is a first class citizen
-            and all configuration revolves around it, so any arbitrary group of servers has the same configuration.
-            I'm aiming at things like Consul and EC2 support for service discovery etc, but really I just wanted tosee whether this
-            sort of design would work. Also to finally get around to learning a bit of Go.
-          </div>
-        </div>
-
-        <div class="span2 offset2 project-link">
-          This Website (With CI/CD)
-          <div class="lightbox-content">
-            <h3>This Website</h3>
-            This website comes with proper CI/CD. You'll find the repo
-            over on <a href="https://github.com/sinkingpoint/sinkingpoint.github.io">github</a>
-            and the Jenkins build at <a href="https://ci.sinkingpoint.com/job/quirl.co.nz/">My Jenkins Instance</a>.
-            When commits are made to the feature branch at the above repo, they are pushed to <a href="https://test.quirl.co.nz">my staging environment</a>.
-            CloudFlare (Which acts as a CDN for this site!) is set up to not cache anything for that subdomain, so changes
-            are immediately visible. When commits are merged into the master branch, they will be pushed to
-            the s3 bucket which governs this site and changes will be visible in up to half an hour as the cache flushes!
-          </div>
-        </div>
-
-        <div class="span2 offset2 project-link">
-          KiwiCon
-          <div class="lightbox-content">
-            <h3>KiwiCon</h3>
-            I am a regular volunteer and attendee at <a href="https://www.kiwicon.org/">KiwiCon</a>,
-            New Zealands main cyber security conference, and have been for the last 5 years. I am
-            interested in cyber security and use this as an opportunity to learn how to better protect
-            the application and infrastructures that I help manage
+            <h3><a href="https://github.com/sinkingpoint/qinit">QInit</a></h3>
+            I decided to learn Rust, so started the same way I learn all low level languages - I built a Linux Distribution with it.
+            QInit is a distribution very minimal external code - everything from the init scripts to the shell to the coreutils are all written
+            by me. I'm most proud of the Init Daemon that controls service scheduling, and the IPC daemon "Freud" that allows encrypted and trusted
+            message passing in a one to many model between processes
           </div>
         </div>
       </div>
