@@ -1,20 +1,26 @@
-$(document).ready(function(){
-  $(".project-link").click(function(){
-    $(".lightbox-bg").css('display', 'block');
-    $(".lightbox").html($(this).children('.lightbox-content').html());
+document.addEventListener("DOMContentLoaded", function(event) {
+  const project_links = document.querySelectorAll('.project-link');
+  const lightbox_bg = document.querySelector('.lightbox-bg');
+  const lightbox = document.querySelector('.lightbox');
+
+  project_links.forEach(v => {
+    return v.addEventListener('click', function() {
+      lightbox_bg.style.display = 'block';
+      lightbox.innerHTML = v.querySelector('.lightbox-content').innerHTML;
+    })
   });
 
-  $(".lightbox").click(function(e){
-    e.stopPropagation()
-  })
-
-  $(".lightbox-bg").click(function(){
-    $(".lightbox-bg").css('display', 'none');
+  lightbox.addEventListener('click', function(event) {
+    event.stopPropagation();
   });
 
-  $(document).keyup(function(e) {
-    if (e.keyCode == 27) { // escape key maps to keycode `27`
-      $(".lightbox-bg").css('display', 'none');
+  lightbox_bg.addEventListener('click', function() {
+    lightbox_bg.style.display = 'none';
+  });
+
+  document.addEventListener('keyup', function(event) {
+    if(event.key === "Escape") {
+      lightbox_bg.style.display = 'none';
     }
   });
 });
