@@ -1,9 +1,8 @@
 name = "personal-site"
-type = "webpack"
 route = 'quirl.co.nz/*'
-zone_id = '3d836ced4235033ce748de8fd72dab9b'
-usage_model = ''
+usage_model = 'bundled'
 compatibility_flags = []
 workers_dev = true
-site = {bucket = ".",entry-point = "workers-site"}
+site = {bucket = "."}
+main = "workers-site/index.js"
 compatibility_date = "2021-10-11"
